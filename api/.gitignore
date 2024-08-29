@@ -1,0 +1,48 @@
+# .NET Core generated files
+bin/
+obj/
+*.swp
+
+# Rider project-specific files
+.idea/
+*.sln.iml
+*.csproj.user
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider IDE workspace files
+.idea/
+*.dotSettings.user
+
+# Visual Studio Code specific files
+.vscode/
+
+# Resharper directories and files
+_ReSharper*/
+*.DotSettings.user
+
+# Rider specific files
+.idea/
+*.sln.iml
+
+# Mac OS generated files
+.DS_Store
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Unix
+*.swp
+*.swo
