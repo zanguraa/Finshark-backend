@@ -33,6 +33,22 @@ public class CommentRepository : ICommentRepository
         return commentModel;
     }
 
+    public async Task<Comment?> UpdateAsync(int id, Comment commentModel)
+    {
+        var comment = await _dbContext.Comments.FirstOrDefaultAsync(c => c.Id == id);
+
+        if (comment == null)
+        {
+            return null;
+        }
+
+        comment.Title = commentModel.Title;
+        comment.Content = commentModel.Content;
+
+        await _dbContext.SaveChangesAsync();
+        return comment;
+    }
+
     public async Task<Comment?> DeleteAsync(int id)
     {
         var comment = await _dbContext.Comments.FirstOrDefaultAsync(c => c.Id == id);
