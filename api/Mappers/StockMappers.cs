@@ -25,7 +25,7 @@ public static class StockMappers
         return new Stock
         {
             Symbol = stockDto.Symbol,
-            Companyname = stockDto.Companyname,
+            Companyname = stockDto.CompanyName,
             Purchase = stockDto.Purchase,
             LastDiv = stockDto.LastDiv,
             Industry = stockDto.Industry,

@@ -44,7 +44,7 @@ public class StockRepository : IStockRepository
         }
         
         existingStock.Symbol = stockRequestDto.Symbol;
-        existingStock.Companyname = stockRequestDto.Companyname;
+        existingStock.Companyname = stockRequestDto.CompanyName;
         existingStock.Purchase = stockRequestDto.Purchase;
         existingStock.LastDiv = stockRequestDto.LastDiv;
         existingStock.Industry = stockRequestDto.Industry;
